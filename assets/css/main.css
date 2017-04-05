@@ -2543,6 +2543,11 @@
 					padding: 0 1em;
 				}
 
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
 		/* Footer */
 
 			#footer .copyright li {
