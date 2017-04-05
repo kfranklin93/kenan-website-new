@@ -57,10 +57,15 @@
 	}
 
 /* Containers */
+#parallax-window{
+    min-height: 400px;
+    background-image: url('https://newevolutiondesigns.com/images/freebies/galaxy-wallpaper-36.jpg');
+}
 
 	.container {
 		margin-left: auto;
 		margin-right: auto;
+		background-color: transparent;
 	}
 
 	.container.\31 25\25 {
@@ -82,7 +87,7 @@
 	}
 
 	.container {
-		width: 1400px;
+		width: 140px;
 	}
 
 	@media screen and (min-width: 961px) and (max-width: 1880px) {
@@ -1681,7 +1686,7 @@
 /* Sections/Article */
 
 	section, article {
-		margin-bottom: 3em;
+		margin-bottom: auto;
 	}
 
 		section > :last-child,
@@ -1691,7 +1696,7 @@
 		}
 
 		.row > section, .row > article {
-			margin-bottom: 0;
+			margin-bottom: auto;
 		}
 
 /* Image */
@@ -1987,12 +1992,12 @@
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #222629 url("images/overlay.png");
+		background-color: #9f52ff;
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
 		color: #fff;
 		height: 100%;
 		left: 0;
-		overflow-y: auto;
+		overflow-y: scroll;
 		position: fixed;
 		text-align: right;
 		top: 0;
@@ -2073,6 +2078,7 @@
 			display: block;
 			padding: 0.5em 1.5em 0.5em 1.5em;
 			color: rgba(255, 255, 255, 0.5);
+			text-shadow: 1px 1px #000000;
 			text-decoration: none;
 			outline: 0;
 			border: 0;
@@ -2104,7 +2110,7 @@
 			}
 
 				#nav ul li a.active span:before {
-					color: #e27689;
+					color: #ff60cc;
 				}
 
 /* Footer */
@@ -2544,10 +2550,6 @@
 				}
 
 
-.parallax-window {
-    min-height: 400px;
-    background: transparent;
-}
 		/* Footer */
 
 			#footer .copyright li {
