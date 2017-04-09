@@ -1905,11 +1905,12 @@
 		position: relative;
 		display: inline-block;
 		border-radius: 0.35em;
-		color: #fff !important;
+		color: #000;
 		text-decoration: none;
 		padding: 0.75em 2.5em 0.75em 2.5em;
-		background-color: #8ebebc;
-		border: 0;
+		background-color: #ffffff, .9;
+
+		border: 2px;
 		cursor: pointer;
 		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
 		background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
@@ -1926,7 +1927,7 @@
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #9ececc;
+			opacity: .7;
 		}
 
 		input[type="button"]:active,
@@ -2147,6 +2148,8 @@
 
 	#main {
 		margin-left: 375px;
+    background: linear-gradient(to bottom right, #6600ff 0%, #ff66cc 100%);
+
 	}
 
 		#main > section {
@@ -2156,6 +2159,7 @@
 			box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 			text-align: center;
 			background-image: url("images/overlay.png");
+
 		}
 
 			#main > section.dark {
@@ -2185,23 +2189,31 @@
 				padding: 6em 0;
 				background-size: cover;
 				background-position: center center;
+				background: url('/images/female-astronaut.jpg');
 			}
 
 			#main > section.one {
 				background-color: #81918E;
-				background-image: url("../../images/banner.jpg");
+				background: url('/images/female-astronaut.jpg');
+
+				/*url("https://newevolutiondesigns.com/images/freebies/galaxy-wallpaper-36.jpg")*/;
 			}
 
 			#main > section.two {
-				background-color: #f5fafa;
+				background-color: #000000 , .9;
+				background: url('/images/female-astronaut.jpg');
+
+				color: #000;
 			}
 
 			#main > section.three {
-				background-color: #ecf1f1;
+				background: url('/images/guardians.jpg');
+				background: linear-gradient(to bottom right, #000099 0%, #ff6699 100%);
+
 			}
 
 			#main > section.four {
-				background-color: #e8edec;
+				background-color: transparent;
 			}
 
 /* Wide */
