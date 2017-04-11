@@ -1637,6 +1637,7 @@
 	h2 {
 		font-size: 2em;
 		letter-spacing: -1px;
+		padding: 50px;
 	}
 
 		h2.alt {
@@ -1746,6 +1747,7 @@
 		.image img {
 			display: block;
 			max-height: 175px;
+			max-width:340px;
 			border-radius: 15px;
 
 		}
