@@ -1,11 +1,6 @@
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 
-/*
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 /* Reset */
 
@@ -24,6 +19,7 @@
 
 	body {
 		line-height: 1;
+		display: block;
 	}
 
 	ol, ul {
@@ -62,18 +58,33 @@
     min-height: 300px;
 		text-align: center;
 		background-position: 50% 50%;
-		background:url("images/galaxy-wallpaper.png");
 		padding:0px;
 
 	}
 .parallax-window-two{
 		margin-top: 0;
-    min-height: 400px;
+    min-height: 650px;
+    min-width: 100%;
+    background-size: cover;
+    width: 100%;
 		text-align: center;
 		background-position: 50% 50%;
 		background: url("images/female-astronaut.jpg");
 
 	}
+	.container > .four{
+		margin: 2px;
+		background: linear-gradient(to bottom right, #000099 0%, #ff6699 100%);
+		/*text-align: center;*/
+		/*align-content: center;*/
+		/*width:100%;*/
+	}
+/*.four{
+			background: linear-gradient(to bottom right, #000099 0%, #ff6699 100%);
+			display: inline-block;
+			margin: 10px;
+
+}*/
 .parallax-window-about{
 		margin-top: 0;
     min-height: 100%;
@@ -85,10 +96,11 @@
 	}
 
 	.container {
-		margin-left: 2px;
-		margin-right: 2px;
-		background-color: transparent;
-		text-align: center
+		margin: 0px;
+		background: linear-gradient(to bottom right, #000099 0%, #ff6699 100%), opacity: 0.5;
+		text-align: center;
+		align-content: center;
+		/*width:100%;*/
 	}
 
 	.container.\31 25\25 {
@@ -169,7 +181,7 @@
 
 		.container.\31 25\25 {
 			width: 100%;
-			max-width: 125%;
+			max-width: 100%;
 			min-width: 100%;
 		}
 
@@ -1582,9 +1594,10 @@
 		background: #fff;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 19pt;
-		font-weight: 300;
+		font-weight: 400;
 		line-height: 1.75em;
 		color: #888;
+
 	}
 
 		body.is-loading * {
@@ -1640,6 +1653,7 @@
 
 	header {
 		margin: 0 0 2em 0;
+
 	}
 
 		header > p {
@@ -1966,17 +1980,18 @@
 /* Item */
 
 	.item {
-		box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 10px 10px 5px white, 0.9;
 		margin-bottom: 40px;
-		border-radius: 25px;
+		border-radius: 15px;
 
 	}
 
 		.item header {
 			background: #fff;
-			margin: 0;
+			margin: 10px;
 			padding: 1em 0 1em 0;
 			font-size: 0.8em;
+			border-radius: 15px;
 		}
 
 			.item header h3 {
@@ -2020,7 +2035,7 @@
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background-color: #9f52ff;
+		background-color: black;
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
 		color: #fff;
 		height: 100%;
@@ -2028,7 +2043,7 @@
 		overflow-y: scroll;
 		position: fixed;
 		text-align: right;
-		top: 0;
+		top: -1px;
 		width: 375px;
 	}
 
@@ -2138,7 +2153,7 @@
 			}
 
 				#nav ul li a.active span:before {
-					color: #ff60cc;
+					color: hotpink;
 				}
 
 /* Footer */
@@ -2179,12 +2194,11 @@
 	}
 
 		#main > section {
-			margin: 0;
+			margin: 0px;
 			overflow: hidden;
 			padding: auto;
 			box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 			text-align: center;
-
 		}
 
 			#main > section.dark {
@@ -2206,36 +2220,38 @@
 					border-color: inherit;
 				}
 
-					#main > section.dark a:hover {
-						border-bottom-color: rgba(255, 255, 255, 0);
+			#main > section.dark a:hover {
+				border-bottom-color: rgba(255, 255, 255, 0);
 					}
 
 			#main > section.cover {
 				padding: 1px;
 				background-size: cover;
 				background-position: center center;
-				background: url('/images/sailor-moon.jpg');
+				display: block;
+				width: 100%;
 			}
 
 			#main > section.one {
 				background: url('/images/female-astronaut.jpg');
-
-
+				background-size: cover;
+				display: inline-block;
 			}
 
 			#main > section.two {
-				background-color: #000000 , .9;
-				color: #000;
+				background-size: cover;
+				display: inline-block;
+				text-align: center;
 			}
 
 			#main > section.three {
-				background: url('/images/guardians.jpg');
+				/*background: url('/images/guardians.jpg');
 				/*background: linear-gradient(to bottom right, #000099 0%, #ff6699 100%);*/
 
 			}
 
 			#main > section.four {
-				background-color: transparent;
+			background: linear-gradient(to bottom right, #000099 0%, #ff6699 100%);
 			}
 
 /* Wide */
@@ -2277,7 +2293,7 @@
 
 			#main > section {
 				padding:0px;
-
+display: inline-block;
 			}
 
 			#main section.cover {
@@ -2295,10 +2311,14 @@
 
 			body, input, textarea, select {
 				font-size: 16pt;
+				display:inline-block;
+
 			}
 
 			.container {
 				padding: 0 2px 0 2px;
+				display:inline-block;
+				margin: auto;
 			}
 
 		/* List */
